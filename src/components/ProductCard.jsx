@@ -26,17 +26,17 @@ export function ProductCard({ product }) {
      };
 
      return (
-          <div class="card card-vertical d-flex direction-column relative shadow">
-               <div class="card-image-container">
-                    <img class="card-image" src={image} alt="shoes" />
+          <div className="card card-vertical d-flex direction-column relative shadow">
+               <div className="card-image-container">
+                    <img className="card-image" src={image} alt="shoes" />
                </div>
-               <div class="card-details">
-                    <div class="card-title">{name}</div>
-                    <div class="card-description">
-                         <p class="card-price d-flex align-end">
+               <div className="card-details">
+                    <div className="card-title">{name}</div>
+                    <div className="card-description">
+                         <p className="card-price d-flex align-end">
                               <span className="new-price">Rs. {newPrice}</span>
-                              <span class="price-strike-through">Rs. {oldPrice}</span>
-                              <span class="discount">({discount}% OFF)</span>
+                              <span className="price-strike-through">Rs. {oldPrice}</span>
+                              <span className="discount">({discount}% OFF)</span>
                          </p>
                          <p className="d-flex align-center">
                               <span className="star material-icons-outlined">
@@ -45,8 +45,8 @@ export function ProductCard({ product }) {
                               {rating}
                          </p>
                     </div>
-                    <div class="cta-btn">
-                         <button class="button btn-primary btn-icon cart-btn d-flex align-center justify-center gap cursor btn-margin" onClick={isProductInCart ? handleGoToCartClick : handleAddToCartClick}>
+                    <div className="cta-btn">
+                         <button className="button btn-primary btn-icon cart-btn d-flex align-center justify-center gap cursor btn-margin" onClick={isProductInCart ? handleGoToCartClick : handleAddToCartClick}>
                               {isProductInCart ? "Go To Cart" : "Add To Cart"}
                          </button>
                     </div>

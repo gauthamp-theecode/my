@@ -9,7 +9,7 @@ export const Home = () => {
 
     const { cart } = useCart();
 
-    console.log(cart);
+    // console.log(cart);
 
     const [products, setProducts] = useState([""]);
 
